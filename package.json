@@ -1,0 +1,19 @@
+{
+  "name": "dev-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camilosan24/Dev-s-house-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Camilosan24/Dev-s-house-projects/issues"
+  },
+  "homepage": "https://github.com/Camilosan24/Dev-s-house-projects#readme"
+}
