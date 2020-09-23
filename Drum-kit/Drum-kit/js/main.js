@@ -265,3 +265,114 @@ jQuery(document).ready(function($) {
 	
 
 });
+
+const teclado = document.getElementById('teclado');
+const drumPieces= document.getElementById('DrumPieces').addEventListener('click', sonidoMouse);
+/*const bambo = document.getElementById('bambo');
+const platillo_crash_izquierdo = document.getElementById('platillo-crash-izquierdo');
+const platillo_crash_derecho = document.getElementById('platillo-crash-derecho');
+const platillo_negro_izquierdo = document.getElementById('platillo-negro-izquierdo');
+const platillo_crash_izquierdo_abajo = document.getElementById('platillo-crash-izquierdo-abajo');
+const tambor_centro = document.getElementById('tambor-centro');
+const tambor_derecho = document.getElementById('tambor-derecho');
+const platillo_crash_derecho_abajo = document.getElementById('platillo-crash-derecho-abajo');
+const tambor_negro_abajo = document.getElementById('tambor_negro_abajo');
+*/
+
+
+var teclas = 
+{
+    bombo : 66,
+    caja : 67,
+    hit_hat : 72,
+    platillo_Der : 68,
+    platillo_Izq : 73,
+    platillo_ride : 82,
+    tom_aereo : 65,
+    tom_suelo : 83
+
+};
+
+document.addEventListener("keyup", sonidoTeclado);
+
+function sonidoTeclado(evento)
+{
+    switch(evento.keyCode)
+    {
+        case teclas.bombo:
+            teclado.innerHTML = '<Audio src= "./sounds/bombo.mp3" autoplay></Audio>';
+        break;
+        case teclas.caja:
+            teclado.innerHTML = '<Audio src= "./sounds/caja.mp3" autoplay></Audio>';
+        break;
+        case teclas.hit_hat:
+            teclado.innerHTML = '<Audio src= "./sounds/hit-hat.mp3" autoplay></Audio>';
+        break;
+        case teclas.platillo_Der:
+            teclado.innerHTML = '<Audio src= "./sounds/platillo-crash-derecho2.mp3" autoplay></Audio>';
+        break;
+        case teclas.platillo_Izq:
+            teclado.innerHTML = '<Audio src= "./sounds/platillo-crash-izquierdo.mp3" autoplay></Audio>';
+        break;
+        case teclas.platillo_ride:
+            teclado.innerHTML = '<Audio src= "./sounds/platillo-ride.mp3" autoplay></Audio>';
+        break;
+        case teclas.tom_aereo:
+            teclado.innerHTML = '<Audio src= "./sounds/tom-aereo.mp3" autoplay></Audio>';
+        break;
+        case teclas.tom_suelo:
+            teclado.innerHTML = '<Audio src= "./sounds/tom-suelo.mp3" autoplay></Audio>';
+        break;
+        //default:
+
+        //break;       
+        
+
+    }
+} 
+
+
+
+function sonidoMouse(e)
+{   
+	const idEvento = e.target;
+	console.log(idEvento);
+	
+		if(idEvento == "bambo")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/bombo.mp3" autoplay></Audio>';
+		}
+		else if(idEvento == "platillo-crash-izquierdo")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/platillo-crash-izquierdo.mp3" autoplay></Audio>';
+		}
+		else if(idEvento == "platillo-crash-derecho")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/platillo-crash-derecho.mp3" autoplay></Audio>';
+		}
+		else if(idEvento == "platillo-negro-izquierdo")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/hit-hat.mp3" autoplay></Audio>';
+		}
+		else if(idEvento == "platillo-crash-izquierdo-abajo")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/platillo-ride.mp3" autoplay></Audio>';
+		}
+		else if(idEvento == "tambor-centro" )
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/tom-aereo.mp3"  autoplay></Audio>';
+		}
+		else if(idEvento == "tambor-derecho")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/tom-aereo.mp3" autoplay></Audio>';
+		}
+		else if (idEvento == "platillo-crash-derecho-abajo")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/platillo-crash-derecho.mp3" autoplay></Audio>';
+		}
+		else if (idEvento == "tambor-negro-abajo")
+		{
+			drumPieces.innerHTML ='<Audio src= "./sounds/tom-suelo.mp3" autoplay></Audio>';
+		}
+
+}
