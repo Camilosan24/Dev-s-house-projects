@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #19191C;
+}
+
+.card{
+    margin: 5vh;
+    min-width: 5vw;
+    max-width: 25vw;
+    min-height: 50vh;
+    box-shadow: 2px 2px 100px 5px;
+    border: 10px solid #252529;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 10px 1px white;
+}
+
+.card-header{
+    background: #19191C;
+    width: 1fr;
+    height: auto;
+    font-size: large;
+    color: white;
+    padding: 2vh;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border-bottom: 1px solid #3E3E45;
+}
+
+.card-body{
+    background: url('../images/image-1.jpg') no-repeat center;
+    min-height: 50vh;
+    max-height: 25vh;
+    padding: 1vh;
+    overflow: auto;
+}
+.card-body::-webkit-scrollbar{
+    background: none;
+    width: 6px;
+
+}
+.card-body::-webkit-scrollbar-thumb{
+    background: #62626C;
+    border-radius: 10px;
+
+}
+.song{
+    display: flex;
+    margin-bottom: 10px;
+    background: #19191C;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px;
+    border: 1px solid white;
+}
+.song:hover{
+
+    box-shadow: 3px 3px 3px 1px #343754;
+}
+.name-song{
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+    width: 75%;
+}
+.icon{
+    background: none;
+    margin-left: 5%;
+    padding: 3px;
+}
+
+.icon:hover{
+    box-shadow: 3px 3px 10px 3px #343754;
+    border-radius: 50px;
+}
+
+.icon:active{
+    box-shadow: 3px 3px 10px 3px white;
+}
+
+.cuadrado{
+    margin-top: 13px;
+    margin-left: 10px;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+.cuadrado:hover{
+    box-shadow: 3px 3px 10px 3px #343754;
+    outline: none;
+}
+
+.cuadrado:active{
+    box-shadow: 3px 3px 10px 3px white;
+    outline: none;
+}
+
+@media screen and(min-width: 500px){
+    .card-body{
+        display: none;
+    }
+}

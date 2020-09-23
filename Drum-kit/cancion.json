@@ -1,0 +1,87 @@
+[
+   {
+      "name":"Back in black",
+      "url":"songs/1.Back In Black.mp3",
+      "value":1
+   },
+   {
+      "name":"Hail Caesar",
+      "url":"songs/2.Hail Caesar.mp3",
+      "value":2
+   },
+   {
+      "name":"Hard as a rock",
+      "url":"songs/3.Hard as a rock.mp3",
+      "value":3
+   },
+   {
+      "name":"Hells Bells",
+      "url":"songs/4.Hells Bells.mp3",
+      "value":4
+   },
+   {
+      "name":"High Voltage",
+      "url":"songs/5.High Voltage.mp3",
+      "value":5
+   },
+   {
+      "name":"Highway To Hell",
+      "url":"songs/6.Highway To Hell.mp3",
+      "value":6
+   },
+   {
+      "name":"It's A Long Way To The Top",
+      "url":"songs/7.It's A Long Way To The Top.mp3",
+      "value":7
+   },
+   {
+      "name":"Jailbreak",
+      "url":"songs/8.Jailbreak.mp3",
+      "value":8
+   },
+   {
+      "name":"Let Me Put My Love Into You",
+      "url":"songs/9.Let Me Put My Love Into You.mp3",
+      "value":9
+   },
+   {
+      "name":"Moneytalks",
+      "url":"songs/10.Moneytalks.mp3",
+      "value":10
+   },
+   {
+      "name":"Soul Stripper",
+      "url":"songs/11.Soul Stripper.mp3",
+      "value":11
+   },
+   {
+      "name":"Stiff upper lip",
+      "url":"songs/12.Stiff upper lip.mp3",
+      "value":12
+   },
+   {
+      "name":"T.N.T",
+      "url":"songs/13.T.N.T.mp3",
+      "value":13
+   },
+   {
+      "name":"Thunderstruck",
+      "url":"songs/14.Thunderstruck.mp3",
+      "value":14
+   },
+   {
+      "name":"Touch to much",
+      "url":"songs/15.Touch to much.mp3",
+      "value":15
+   },
+   {
+      "name":"Who Made Who",
+      "url":"songs/16.Who Made Who.mp3",
+      "value":16
+   },
+   {
+      "name":"You Shook Me All Night Long",
+      "url":"songs/17.You Shook Me All Night Long.mp3",
+      "value":17
+   }
+]
