@@ -11,6 +11,17 @@ export class Asignacion{
             "tom_aereo" : 65,
             "tom_suelo" : 83
         };
+
+        this.datos =[
+            "bombo",
+            "caja",
+            "hit_hat",
+            "platillo_Der",
+            "platillo_Izq",
+            "platillo_ride",
+            "tom_aereo",
+            "tom_suelo"
+        ];
     }
 
     sendInfo(){
@@ -18,7 +29,11 @@ export class Asignacion{
     }
 
     setTeclas(e){
-        console.log(e);
+        let datos=[];
+        for (let i = 0; i < this.datos.length; i++) {
+            let dato = this.teclas[this.datos[i]];
+            datos.push(dato);
+        }
 
         switch(e.keyCode)
         {
