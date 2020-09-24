@@ -2,7 +2,7 @@
   "name": "dev-house",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Drum-kit/index.html",
   "scripts": {
     "start": "node index.js"
   },
