@@ -28,18 +28,24 @@ DrumSounds.addEventListener('mousedown',(e)=>{
 document.addEventListener('keydown', (e)=>{
     reproducir.sonidoTeclado(e);
 })
-
+var isEdited = false;
 configKey.addEventListener('click',(e)=>{
     let keyChar = e.target.parentElement.parentElement.children[2];
     console.log('letra: ' + keyChar.innerHTML);
     keyChar.innerHTML="Press key";
+    isEdited = true;
 
-    addEventListener('keyup',(e)=>{
+})
+
+
+addEventListener('keyup',(e)=>{
+    if(isEdited){
+        let keyChar = e.target.parentElement.parentElement.children[2];
         let keyCode = e.keyCode;
         keyChar.innerHTML = `${String.fromCharCode(keyCode)}`;
         console.log('numero: ' + keyCode);
-
-    })
+        isEdited = false;
+    }
 })
 
 
