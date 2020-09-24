@@ -1,47 +1,56 @@
-export class Reproducir{
-    constructor(teclas){
-            this.teclas = teclas;
-    }
-    playSong(array,value){
-        let song = array[value-1].url;
-        const audio = new Audio(song);
-        audio.volume = 0.4;
-        audio.play();
+export class Asignacion{
+    constructor(){
+        this.teclas =
+        {
+            "bombo" : 66,
+            "caja" : 67,
+            "hit_hat" : 72,
+            "platillo_Der" : 68,
+            "platillo_Izq" : 73,
+            "platillo_ride" : 82,
+            "tom_aereo" : 65,
+            "tom_suelo" : 83
+        };
     }
 
-    sonidoTeclado(e){
-        const idEvent = e.target.id;
+    sendInfo(){
+        return this.teclas;
+    }
+
+    setTeclas(e){
+        console.log(e);
+
         switch(e.keyCode)
         {
             case this.teclas.bombo:
-                new Audio('./sounds/bombo.mp3').play();
+                this.teclas.bombo = e.keyCode;
                 break;
 
             case this.teclas.caja:
-                new Audio('./sounds/caja.mp3').play();
+                this.teclas.caja = e.keyCode;
                 break;
 
             case this.teclas.hit_hat:
-                new Audio('./sounds/hit-hat.mp3').play();
+                this.teclas.hit_hat = e.keyCode;
                 break;
 
             case this.teclas.platillo_Der:
-                new Audio('./sounds/platillo-crash-derecho2.mp3').play();
+                this.teclas.platillo_Der = e.keyCode;
                 break;
 
             case this.teclas.platillo_Izq:
-                new Audio('./sounds/platillo-crash-izquierdo.mp3').play();
+                this.teclas.platillo_Izq = e.keyCode;
                 break;
             case this.teclas.platillo_ride:
-                new Audio('./sounds/platillo-ride.mp3').play();
+                this.teclas.platillo_ride = e.keyCode;
                 break;
 
             case this.teclas.tom_aereo:
-                new Audio('./sounds/tom-aereo.mp3').play();
+                this.teclas.tom_aereo = e.keyCode;
                 break;
 
             case this.teclas.tom_suelo:
-                new Audio('./sounds/tom-suelo.mp3').play();
+                this.teclas.tom_suelo = e.keyCode;
                 break;
             //default:
             //break;

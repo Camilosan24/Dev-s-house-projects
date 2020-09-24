@@ -24,4 +24,25 @@ export class UI {
         })
         return datos;
     }
+
+    renderArrows(Arrow){
+        const configKey = document.getElementById('config-key').children[1];
+        let datos =[
+            "bombo",
+            "caja",
+            "hit_hat",
+            "platillo_Der",
+            "platillo_Izq",
+            "platillo_ride",
+            "tom_aereo",
+            "tom_suelo"
+        ];
+
+        for (let i = 0; i <= 7; i++) {
+            let valor = String.fromCharCode(Arrow.teclas[datos[i]]);
+            let insertar = configKey.children[i].children[2].children[0];
+            insertar.innerHTML = `${valor}`;
+        }
+    }
 }
+
