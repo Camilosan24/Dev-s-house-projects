@@ -34,6 +34,8 @@ export class Asignacion{
             let dato = this.teclas[this.datos[i]];
             datos.push(dato);
         }
+        let index = datos.findIndex(e);
+        console.log(index);
 
         switch(e.keyCode)
         {
